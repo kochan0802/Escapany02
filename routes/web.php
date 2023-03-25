@@ -86,7 +86,7 @@ Route::get('coach/list', [CoachController::class, 'select'])
 
 */
 
-Route::get('/', [TasksController::class, 'index'])->name('tasks.index');
+Route::get('tasks/index', [TasksController::class, 'index'])->name('tasks.index');
 //詳細ページ
 Route::get('/{id}', [TasksController::class, 'show'])->name('tasks.show');
 // タスク追加

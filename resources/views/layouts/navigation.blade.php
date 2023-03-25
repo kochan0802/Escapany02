@@ -16,6 +16,18 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <!-- 🔽 Todoページへのリンクを追加 -->
+            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+              <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
+                {{ __('Todotask') }}
+              </x-nav-link>
+            </div>
+            <!-- 🔽 検索ページへのリンクを追加 -->
+            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+              <x-nav-link :href="route('coach.list')" :active="request()->routeIs('coach.list')">
+                {{ __('Research') }}
+              </x-nav-link>
+            </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -71,6 +83,19 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
+        
+        <!-- 🔽 Todoページへのリンクを追加 -->
+    <div class="pt-2 pb-3 space-y-1">
+      <x-responsive-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
+        {{ __('Todotask') }}
+      </x-responsive-nav-link>
+    </div>
+    <!-- 🔽 検索ページへのリンクを追加 -->
+    <div class="pt-2 pb-3 space-y-1">
+      <x-responsive-nav-link :href="route('coach.list')" :active="request()->routeIs('coach.list')">
+        {{ __('Research') }}
+      </x-responsive-nav-link>
+    </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
