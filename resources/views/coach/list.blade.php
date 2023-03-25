@@ -16,12 +16,12 @@
                 <label for="number" class="control-label col-xs-2">ジャンル</label>
                 <div class="col-xs-10">
                     <select name="category_name" class="form-control select select-primary mbl">
-                        <option value="起業したい" {{ $category_name == '起業したい' ? 'selected' : '' }}>起業したい</option>
-                        <option value="副業を始めたい" {{ $category_name == '副業を始めたい' ? 'selected' : '' }}>副業を始めたい</option>
-                        <option value="資格取得をしたい" {{ $category_name == '資格取得をしたい' ? 'selected' : '' }}>資格取得をしたい</option>
-                        <option value="海外移住したい" {{ $category_name == '海外移住したい' ? 'selected' : '' }}>海外移住したい</option>
-                        <option value="自分に合った働きかたを考えたい" {{ $category_name == '自分に合った働きかたを考えたい' ? 'selected' : '' }}>自分に合った働きかたを考えたい</option>
-                        <option value="新たな趣味を見つけたい" {{ $category_name == '新たな趣味を見つけたい' ? 'selected' : '' }}>新たな趣味を見つけたい</option>
+                        <option value="起業したい" {{ $category_name == '起業したい' ? 'selected' : '' }}>起業</option>
+                        <option value="副業を始めたい" {{ $category_name == '副業を始めたい' ? 'selected' : '' }}>副業</option>
+                        <option value="資格取得をしたい" {{ $category_name == '資格取得をしたい' ? 'selected' : '' }}>資格取得</option>
+                        <option value="海外移住したい" {{ $category_name == '海外移住したい' ? 'selected' : '' }}>海外移住</option>
+                        <option value="自分に合った働きかたを考えたい" {{ $category_name == '自分に合った働きかたを考えたい' ? 'selected' : '' }}>自分に合った働きかたを模索</option>
+                        <option value="新たな趣味を見つけたい" {{ $category_name == '新たな趣味を見つけたい' ? 'selected' : '' }}>新たな趣味を模索</option>
                         <option value="その他" {{ $category_name == 'その他' ? 'selected' : '' }}>その他</option>
                     </select>
                 </div>
